@@ -27,12 +27,12 @@ class ListOfRecipes extends Component {
           
             return( 
                     <Link to = {`/${countryName}/${recipe.strMeal}/${id}`}>
-                    <div className="images ">
+                    <div className="images">
                         <figure>
                             <img className="food-images" src={recipe.strMealThumb} />
                                 <figcaption>
-                                {recipe.strMeal} 
-                            </figcaption>
+                                    {recipe.strMeal} 
+                                </figcaption>
                         </figure>
                         </div>
                     </Link>
@@ -42,6 +42,7 @@ class ListOfRecipes extends Component {
         
         return (
             <div className="recipeImages">
+                <Link className="back-btn" to = {`/`}>Back</Link>
                 <div className="recipe-title-container">
                 <h1>{this.props.match.params.country} food, great choice!</h1>
                 <h2>Select one of these mouthwatering dishes!</h2>

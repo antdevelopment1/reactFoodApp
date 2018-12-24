@@ -10,18 +10,34 @@ import ListOfRecipes from './ListOfRecipes';
 import RecipePage from './RecipePage';
 import Random from './Random';
 
-import Canada from './images/canada-country.png';
-import China from './images/china-country.png';
-import England from './images/england-country.png';
-import France from './images/france-country.png';
-import India from './images/india.png';
-import Japan from './images/japan.png';
-import Mexico from './images/Mexico.png';
-import Morocco from './images/morocco.png';
-import Spain from './images/spain.png';
-import Thailand from './images/thailand.png';
-import Vietnam from './images/vietnam.png';
-import UnitedStates from './images/UnitedStates.jpg';
+// import Canada from './images/canada-country.png';
+// import China from './images/china-country.png';
+// import England from './images/england-country.png';
+// import France from './images/france-country.png';
+// import India from './images/india.png';
+// import Japan from './images/japan.png';
+// import Mexico from './images/Mexico.png';
+// import Morocco from './images/morocco.png';
+// import Spain from './images/spain.png';
+// import Thailand from './images/thailand.png';
+// import Vietnam from './images/vietnam.png';
+// import UnitedStates from './images/UnitedStates.jpg';
+
+import UnitedStates from './images/us.png';
+import England from './images/en.png';
+import Canada from './images/ca.png';
+import China from './images/cn.png';
+import France from './images/fr.png';
+import India from './images/in.png';
+import Italy from './images/it.png';
+import Jamaica from './images/jm.png';
+import Japan from './images/jp.png';
+import Mexico from './images/mx.png';
+import Morocco from './images/ma.png';
+import Spain from './images/es.png';
+import Thailand from './images/th.png';
+
+
 
 
 class YumWorld extends Component {
@@ -60,6 +76,18 @@ class YumWorld extends Component {
                     nationality: 'Indian'
                 },
                 {
+                    country: 'Italy',
+                    flag: Italy,
+                    recipe: [],
+                    nationality: 'Italian'
+                },
+                {
+                    country: 'Jamaica',
+                    flag: Jamaica,
+                    recipe: [],
+                    nationality: 'Jamaican'
+                },
+                {
                     country: 'Japan',
                     flag: Japan,
                     recipe: [],
@@ -89,12 +117,12 @@ class YumWorld extends Component {
                     recipe: [],
                     nationality: 'Thai'
                 },
-                {
-                    country: 'Vietnam',
-                    flag: Vietnam,
-                    recipe: [],
-                    nationality: 'Vietnamese'
-                },
+                // {
+                //     country: 'Vietnam',
+                //     flag: Vietnam,
+                //     recipe: [],
+                //     nationality: 'Vietnamese'
+                // },
                 {
                     country: 'UnitedStates',
                     flag: UnitedStates,

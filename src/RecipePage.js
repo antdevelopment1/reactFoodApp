@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import Instructions from './Instructions';
 import Counters from './Counters';
 
@@ -20,13 +20,13 @@ class RecipePage extends React.Component {
     }
 
     componentDidMount() {
-        const id = this.props.match.params.id
+        const id = this.props.match.params.id;
+        console.log(this.props.nationality)
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
             .then(results => {
                 return results.json();
             })
             .then(data => {
-                // console.log(data)
                 this.setState({
                     id: data.meals[0].idMeal,
                     recipeImage: data.meals[0].strMealThumb,
@@ -82,10 +82,12 @@ class RecipePage extends React.Component {
     };
 
     render() {
+        const countryName = this.props.match.params.country;
         return (
             <div>
+                <Link to = {`/${countryName}`} className="back-btn">Back</Link>
                 <div className="recipe-header">
-                    <img className="flagImages" src={this.state.recipeImage} alt={this.state.recipeTitle} />
+                    <img className="flagImages recipeImage" src={this.state.recipeImage} alt={this.state.recipeTitle} />
                     <div className="title-likes">   
                         <h1>{this.state.recipeTitle}</h1>
                         <Counters
