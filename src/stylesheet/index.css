@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Luckiest+Guy');
+/* font-family: 'Luckiest Guy', cursive;
+font-family: 'Hind', sans-serif; */
+
+* {
+    /* outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Hind', sans-serif;
+    background: rgb(248, 246, 236);
+    color: #752513;
+    }
+
+li {
+    list-style: none;
+}
+
+/*=================
+== FLAG PAGE
+=================*/
+h1 {
+    font-size: 30px;
+}
+
+figure {
+    /* outline: 1px solid green; */
+    text-align: center;
+    width: 150px;
+}
+
+figcaption{
+    /* text-decoration-style: none; */
+    font-size: 15px;
+    display: inline-block;
+    /* outline: 1px solid orange; */
+    color: #752513;
+}
+
+.foodImages {
+    width: 200px;
+    height: 200px;
+}
+
+/*=================
+== RECIPE PAGE
+=================*/
+.ingredients-container {
+    display: flex;
+}
+
+.recipe-header {
+    display: flex;
+}
+
+.recipe-header img {
+    width: 150px;
+    margin: 15px;
+}
+
+.title-likes {
+    padding-left: 5px;
+    /* outline: 1px solid blue; */
+} 
+
+.ingredients-list {
+    margin-left: 15px;
+}
+
+.full-recipe-text {
+    margin-left: 15px;
+}
+
+/* ============ */
+/* Flag Page */
+/* ============ */
+/* Start of styles april */
+
+.countryImages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    /* outline: 50px solid red; */
+}
+
+.country-title-container {
+    /* outline: 1px solid blue; */
+    margin: 40px auto 30px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.country-title-container h1 {
+    padding-bottom: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4.3rem;
+    letter-spacing: 7px;
+}
+
+.country-title-container h2 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+/* div hugging all divs of images  */
+.country-image-container  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 53%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    /* outline: 3px solid green; */
+    margin-bottom: 100px;
+    padding: 10px 20px; 
+}
+
+/* div hugging each individual image */
+.images {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* outline: 1px solid blue; */
+    padding: 30px;
+}
+
+ /* img itself */
+.flagImages {
+    min-height: 140px;
+    min-width: 140px;
+    max-height: 140px;
+    max-width: 140px;
+}
+
+/* ============ */
+/* Recipe Page */
+/* ============ */
+
+.food-images {
+    min-height: 140px;
+    min-width: 140px;
+    max-height: 140px;
+    max-width: 140px;
+}
+
+.recipeImages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+}
+
+.recipe-title-container {
+    margin: 40px auto 30px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.recipe-title-container {
+    /* outline: 1px solid blue; */
+    margin: 40px auto 30px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.recipe-title-container h1 {
+    padding-bottom: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4.3rem;
+    letter-spacing: 7px;
+}
+
+.recipe-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 53%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    /* outline: 3px solid green; */
+    margin-bottom: 100px;
+    padding: 10px 20px; 
+}
+
+
+/* ================ */
+/* INGREDIENT PAGE */
+/* ================ */
+.ingredients-container {
+    display: flex;
+}
+
+.recipe-header {
+    display: flex;
+}
+
+.recipe-header img {
+    width: 150px;
+    margin: 15px;
+}
+
+.title-likes {
+    padding-left: 5px;
+    /* outline: 1px solid blue; */
+} */
+
+.ingredients-list {
+    margin-left: 15px;
+}
+
+.full-recipe-text {
+    margin-left: 15px;
+}
+
+.recipe-header {
+    margin-top: 20px;
+    /* outline: 1px solid red; */
+}
+
+.instructions {
+    width: 68%;
+    margin-left: 15px;
+}
+
+.button1 {
+    margin: 10px;
+}
+.button1, .button2 {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(117, 37, 19, .9);
+    background-color: rgb(248, 246, 236);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+    transform: scale(1);
+    transition: box-shadow .2s ease-in-out .1s, color .2s ease-in-out .1s, transform .2s ease-in-out .1s;
+}
+
+.button1:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .7)
+}
+
+.button2:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.where-to-eat {
+    margin-bottom: 22px;
+}
+
+.website-link {
+    font-size: 22px;
+}
+
+.website-link,
+.website-link a {
+    color: #752513;
+    text-decoration: none;
+}
+
+.website-link a {
+    margin-left: 15px;
+}
+
+.website-link-url {
+    font-size: 18px;
+    
+}
+.website-link-url a {
+    text-decoration: none;
+    color: #752513;
+}
+
+
