@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Hind|Luckiest+Guy');
-/* font-family: 'Luckiest Guy', cursive;
-font-family: 'Hind', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lato');
+/* font-family: 'Chelsea Market', cursive; */
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Fredoka One', cursive; */
+
 
 * {
     /* outline: 1px solid red; */
@@ -8,9 +10,7 @@ font-family: 'Hind', sans-serif; */
     padding: 0;
     box-sizing: border-box;
     outline: none;
-
 }
-
 
 a {
     text-decoration: none;
@@ -19,74 +19,59 @@ a {
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Hind', sans-serif;
-    background: rgb(248, 246, 236);
-    color: #752513;
-    }
+    font-family: 'Lato', sans-serif;
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.back-btn {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    /* padding-top: 25px; */
+    padding-left: 25px;
+    font-family: 'Fredoka One', cursive; 
+    letter-spacing: 2px;
+    line-height: 1.4rem;
+}
+
 
 li {
     list-style: none;
 }
 
-/*=================
-== FLAG PAGE
-=================*/
-h1 {
-    font-size: 30px;
-}
-
 figure {
     /* outline: 1px solid green; */
-    text-align: center;
-    width: 150px;
+    text-align: justify;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 figcaption{
-    /* text-decoration-style: none; */
-    font-size: 15px;
-    display: inline-block;
-    /* outline: 1px solid orange; */
-    color: #752513;
+    /* outline: 1px solid yellow; */
+    font-size: 12px;
+    color: black;
 }
 
-.foodImages {
-    width: 200px;
-    height: 200px;
-}
-
-/*=================
-== RECIPE PAGE
-=================*/
-.ingredients-container {
+/* div hugging each individual image */
+.images {
     display: flex;
-}
-
-.recipe-header {
-    display: flex;
-}
-
-.recipe-header img {
-    width: 150px;
-    margin: 15px;
-}
-
-.title-likes {
-    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     /* outline: 1px solid blue; */
-} 
-
-.ingredients-list {
-    margin-left: 15px;
-}
-
-.full-recipe-text {
-    margin-left: 15px;
+    padding: 30px;
 }
 
 /* ============ */
 /* Flag Page */
 /* ============ */
-/* Start of styles april */
 
 .countryImages {
     display: flex;
@@ -105,21 +90,30 @@ figcaption{
 
 .country-title-container h1 {
     padding-bottom: 30px;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Fredoka One', cursive;
     font-size: 4.3rem;
     letter-spacing: 7px;
 }
 
 .country-title-container h2 {
+    font-family: 'Fredoka One', cursive;
+
     font-size: 1.7rem;
     letter-spacing: 2px;
+    margin-bottom: 40px;
 }
 
+.random-btn {
+    font-family: 'Fredoka One', cursive;
+    outline: 1px solid black;
+    padding: 15px 30px;
+
+}
 /* div hugging all divs of images  */
 .country-image-container  {
     display: flex;
     flex-wrap: wrap;
-    width: 53%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     justify-content: center;
@@ -129,39 +123,41 @@ figcaption{
     padding: 10px 20px; 
 }
 
-/* div hugging each individual image */
-.images {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    /* outline: 1px solid blue; */
-    padding: 30px;
-}
-
  /* img itself */
 .flagImages {
-    min-height: 140px;
-    min-width: 140px;
-    max-height: 140px;
-    max-width: 140px;
+    min-height: 150px;
+    min-width: 200px;
+    max-height: 150px;
+    max-width: 200px;
+    /* border-radius: 50%; */
+    box-shadow: 3px 3px 7px black;
+    margin-bottom: 8px;
+}
+
+/* ============ */
+/* Recipes Page */
+/* ============ */
+
+.food-images {
+    min-height: 170px;
+    min-width: 170px;
+    max-height: 170px;
+    max-width: 170px;
+    box-shadow: 3px 3px 7px black;
+    margin-bottom: 8px;
 }
 
 /* ============ */
 /* Recipe Page */
 /* ============ */
-
-.food-images {
-    min-height: 140px;
-    min-width: 140px;
-    max-height: 140px;
-    max-width: 140px;
-}
-
-.recipeImages {
+.recipe-header {
+    /* outline: 1px solid purple; */
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .recipe-title-container {
@@ -179,7 +175,7 @@ figcaption{
 
 .recipe-title-container h1 {
     padding-bottom: 30px;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Fredoka One', cursive;
     font-size: 4.3rem;
     letter-spacing: 7px;
 }
@@ -187,78 +183,161 @@ figcaption{
 .recipe-image-container {
     display: flex;
     flex-wrap: wrap;
-    width: 53%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     /* outline: 3px solid green; */
     margin-bottom: 100px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
+}
+
+.recipeImage {
+    min-height: 180px;
+    min-width: 180px;
+    max-height: 180px;
+    max-width: 180px;
+    box-shadow: 3px 3px 7px black;
+    margin: 8px;   
+}
+
+/* ================ */
+/*    COUNTERS      */
+/* ================ */
+
+.title-likes {
+    /* outline: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.title-likes h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.counter-btn-container {
+    /* outline: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    outline: 1px solid black;
+    padding: 5px;
+    margin: 5px auto;
+    cursor: pointer;
 }
 
 
 /* ================ */
 /* INGREDIENT PAGE */
 /* ================ */
-.ingredients-container {
-    display: flex;
-}
-
-.recipe-header {
-    display: flex;
-}
-
-.recipe-header img {
-    width: 150px;
-    margin: 15px;
-}
-
-.title-likes {
-    padding-left: 5px;
-    /* outline: 1px solid blue; */
-} */
-
-.ingredients-list {
-    margin-left: 15px;
-}
 
 .full-recipe-text {
-    margin-left: 15px;
+    /* outline: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.recipe-header {
-    margin-top: 20px;
-    /* outline: 1px solid red; */
+.directions{
+    /* outline: 1px solid purple; */
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: flex-start;
 }
 
-.instructions {
-    width: 68%;
-    margin-left: 15px;
+.ingredient-container {
+    /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
 }
 
-.button1 {
-    margin: 10px;
+.ingredient-container h3 {
+    padding-bottom: 25px;
+    font-size: 26px;
 }
-.button1, .button2 {
-    font-size: 20px;
+
+.ingredients-container-lists {
+    outline: 1px solid black;
+    width: 100%;
+    margin-left: 45px;
+    display: flex;
+    justify-content: space-evenly;
     padding: 10px;
-    border-radius: 5px;
-    color: rgba(117, 37, 19, .9);
-    background-color: rgb(248, 246, 236);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
-    transform: scale(1);
-    transition: box-shadow .2s ease-in-out .1s, color .2s ease-in-out .1s, transform .2s ease-in-out .1s;
 }
 
-.button1:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .7)
+.amount-list {
+    /* outline: 1px solid yellow; */
+    font-size: 16px;
+    line-height: 1.4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
 }
 
-.button2:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .7);
+.ingredients-list {
+    /* outline: 1px solid red; */
+    width: 50%;
+    font-size: 16px;
+    margin-left: 15px;
+    line-height: 1.4rem;
+    padding: 5px;
+}
+
+.instruction-container {
+    /* outline: 1px solid red; */
+    width: 70%;
+    padding: 0 0 20px 0;
+    /* margin: 15px auto 30px auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.instruction-container h3 {
+    font-size: 26px;
+    padding-bottom: 25px;
+}
+
+.instruction-container p {
+    text-align: justify;
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    line-height: 1.4rem;
+    width: 80%;
+}
+
+.original-recipe {
+    /* outline: 1px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.original-recipe p {
+    padding-top: 25px;
+    font-size: 16px;
+}
+
+.original-recipe p a {
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 .where-to-eat {
@@ -271,21 +350,9 @@ figcaption{
 
 .website-link,
 .website-link a {
-    color: #752513;
+    /* color: #752513; */
+    color: black;
     text-decoration: none;
-}
-
-.website-link a {
-    margin-left: 15px;
-}
-
-.website-link-url {
     font-size: 18px;
-    
 }
-.website-link-url a {
-    text-decoration: none;
-    color: #752513;
-}
-
 
