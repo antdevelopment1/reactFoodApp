@@ -85,7 +85,9 @@ class RecipePage extends React.Component {
         const countryName = this.props.match.params.country;
         return (
             <div>
-                <Link to = {`/${countryName}`} className="back-btn">Back</Link>
+                <div className="back-btn-container">
+                    <Link to = {`/${countryName}`} className="back-btn">Back</Link>
+                </div>
                 <div className="recipe-header">
                     <img className="flagImages recipeImage" src={this.state.recipeImage} alt={this.state.recipeTitle} />
                     <div className="title-likes">   

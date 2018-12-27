@@ -42,7 +42,9 @@ class ListOfRecipes extends Component {
         
         return (
             <div className="recipeImages">
-                <Link className="back-btn" to = {`/`}>Back</Link>
+                <div className="back-btn-container">
+                    <Link className="back-btn" to = {`/`}>Back</Link>
+                </div>
                 <div className="recipe-title-container">
                 <h1>{this.props.match.params.country} food, great choice!</h1>
                 <h2>Select one of these mouthwatering dishes!</h2>
