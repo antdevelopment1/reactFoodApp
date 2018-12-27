@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Counters from './Counters';
-import Instructions from './Instructions'
+import Instructions from './Instructions';
+import {Link} from 'react-router-dom';
 
 
 class Random extends React.Component{
@@ -84,6 +85,9 @@ class Random extends React.Component{
     render() {
         return(
             <div>
+                <div className="back-btn-container">
+                    <Link className="back-btn" to = {`/`}>Back</Link>
+                </div>
                 <div className="recipe-header">
                     <img className="flagImages" src={this.state.recipeImage} alt={this.state.recipeTitle} />
                     <div className="title-likes">   
