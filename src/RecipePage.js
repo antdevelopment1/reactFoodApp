@@ -11,7 +11,7 @@ class RecipePage extends React.Component {
             recipeImage: "",
             recipeTitle: "",
             likes: parseInt((Math.random() * (100)).toFixed(0)),
-            unlikes: parseInt((Math.random() * (-100)).toFixed(0)),
+            unlikes: parseInt((Math.random() * (100)).toFixed(0)),
             ingredients: [],
             measurements: [],
             instructions: "",
