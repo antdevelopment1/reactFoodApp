@@ -5,7 +5,7 @@
 
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -160,7 +160,14 @@ figcaption{
     max-height: 170px;
     max-width: 170px;
     box-shadow: 3px 3px 7px black;
+    /* outline: 3px solid blue; */
+    transition: box-shadow .2s ease-in-out .1s, color .2s ease-in-out .1s, transform .2s ease-in-out .1s;
     margin-bottom: 8px;
+}
+
+.food-images:hover {
+    transform: scale(1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
 /* ============ */
@@ -217,9 +224,15 @@ figcaption{
     min-width: 180px;
     max-height: 180px;
     max-width: 180px;
-    box-shadow: 3px 3px 7px black;
+    /* outline: 13px solid blue; */
     margin: 8px;   
 }
+
+.recipeImage:hover {
+    transform: scale(1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .7);
+}
+
 
 /* ================ */
 /*    COUNTERS      */
