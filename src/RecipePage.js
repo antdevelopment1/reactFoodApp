@@ -83,10 +83,12 @@ class RecipePage extends React.Component {
 
     render() {
         const countryName = this.props.match.params.country;
+        let count = -1;
+        count++;
         return (
             <div>
                 <div className="back-btn-container">
-                    <Link to = {`/${countryName}`} className="back-btn">Back</Link>
+                    <Link key={count}  to = {`/${countryName}`} className="back-btn">Back</Link>
                 </div>
                 <div className="recipe-header">
                     <img className="flagImages recipeImage" src={this.state.recipeImage} alt={this.state.recipeTitle} />

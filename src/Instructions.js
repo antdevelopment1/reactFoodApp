@@ -6,18 +6,18 @@ const Instructions = (props) => {
     const instruction = props.instructions;
     const URL = props.sourceURL;
 
-    const ingredientList = ingredient.map(ingredient => {
+    const ingredientList = ingredient.map((ingredient, index) => {
         if (ingredient !== "") {
             return (
-                <li>{ingredient}</li>
+                <li key={index} >{ingredient}</li>
             )
         }
     })
 
-    const amountList = measurement.map(measurement => {
+    const amountList = measurement.map((measurement, index) => {
         if (measurement !== '') {
             return (
-                <li>{measurement}</li>
+                <li key={index}>{measurement}</li>
             )
         }
     })
