@@ -140,9 +140,14 @@ figcaption{
     min-width: 200px;
     max-height: 150px;
     max-width: 200px;
-    /* border-radius: 50%; */
     box-shadow: 3px 3px 7px black;
+    transition: box-shadow .2s ease-in-out .1s, color .2s ease-in-out .1s, transform .2s ease-in-out .1s;
     margin-bottom: 8px;
+}
+
+.flagImages:hover {
+    transform: scale(1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .7)
 }
 
 /* ============ */
