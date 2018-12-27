@@ -237,19 +237,22 @@ figcaption{
 .counter-btn-container {
     /* outline: 1px solid purple; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
 .button {
-    outline: 1px solid black;
-    padding: 5px;
+    border: 1px solid black;
+    padding: 10px;
     margin: 5px auto;
     cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+    /* outline: 1px solid red; */
 }
-
 
 /* ================ */
 /* INGREDIENT PAGE */
@@ -285,6 +288,7 @@ figcaption{
 }
 
 .ingredients-container-lists {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .7);
     outline: 1px solid black;
     width: 100%;
     margin-left: 45px;

@@ -9,12 +9,13 @@ const FlagCountry = (props) => {
         const theCountry = country.country;
         const theFlag = country.flag;
         const theNationality = country.nationality;
+        const theKey = index;
 
         return (
-            <Link to={`/${theNationality}`} key={index}>
+            <Link to={`/${theNationality}`} key={theKey} >
                 <div className="images">
                     <figure>
-                        <img className="flagImages" alt={theCountry} src={theFlag} />
+                        <img className="flagImages" alt={theCountry} src={theFlag}/>
                         <figcaption>
                             {theCountry}
                         </figcaption>

@@ -29,7 +29,7 @@ class ListOfRecipes extends Component {
                     <Link key={index} to = {`/${countryName}/${recipe.strMeal}/${id}`}>
                     <div className="images">
                         <figure>
-                            <img className="food-images" src={recipe.strMealThumb} />
+                            <img className="food-images" src={recipe.strMealThumb} alt={recipe.strMealThumb}/>
                                 <figcaption>
                                     {recipe.strMeal} 
                                 </figcaption>
