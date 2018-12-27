@@ -167,7 +167,7 @@ figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 30px;
     padding: 20px;
 }
@@ -272,6 +272,8 @@ figcaption{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 .directions{
@@ -283,7 +285,6 @@ figcaption{
 }
 
 .ingredient-container {
-    /* outline: 1px solid blue; */
     display: flex;
     flex-direction: column;
     width: 30%;
