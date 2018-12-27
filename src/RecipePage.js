@@ -86,7 +86,7 @@ class RecipePage extends React.Component {
         return (
             <div>
                 <div className="back-btn-container">
-                    <Link to = {`/${countryName}`} className="back-btn">Back</Link>
+                    <Link to = {`/${countryName}`} className="back-btn">Back To Recipes</Link>
                 </div>
                 <div className="recipe-header">
                     <img className="flagImages recipeImage" src={this.state.recipeImage} alt={this.state.recipeTitle} />
@@ -119,7 +119,7 @@ class RecipePage extends React.Component {
 
     _handleUnlike = () => {
         this.setState({
-            unlikes: (this.state.unlikes - 1)
+            unlikes: (this.state.unlikes + 1)
         })
     };
 };

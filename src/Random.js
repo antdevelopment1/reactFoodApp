@@ -86,7 +86,7 @@ class Random extends React.Component{
         return(
             <div>
                 <div className="back-btn-container">
-                    <Link className="back-btn" to = {`/`}>Back</Link>
+                    <Link className="back-btn" to = {`/`}>Back To Countries</Link>
                 </div>
                 <div className="recipe-header">
                     <img className="flagImages" src={this.state.recipeImage} alt={this.state.recipeTitle} />

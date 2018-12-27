@@ -23,6 +23,7 @@ body {
     background: #abbaab;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: black; */
 }
 
 .back-btn-container {
@@ -278,6 +279,7 @@ figcaption{
 
 .full-recipe-text {
     /* outline: 2px solid green; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +289,7 @@ figcaption{
 }
 
 .directions{
-    /* outline: 1px solid purple; */
+    /* outline: 5px solid purple; */
     width: 100%;
     height: 100%;
     display:flex;
@@ -355,15 +357,17 @@ figcaption{
 }
 
 .instruction-container p {
+    
     text-align: justify;
     font-size: 16px;
+    /* outline: 1px solid green; */
     /* letter-spacing: 1px; */
     line-height: 1.4rem;
-    width: 80%;
+    width: 100%;
 }
 
 .original-recipe {
-    /* outline: 1px solid red; */
+    /* outline: 1px solid blue; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -371,6 +375,7 @@ figcaption{
 }
 
 .original-recipe p {
+    /* outline: 3px solid red; */
     padding-top: 25px;
     font-size: 16px;
 }
@@ -403,13 +408,57 @@ figcaption{
 @media screen and (max-width: 1200px) {
     .recipe-title-container h1 {
         font-size: 3.4rem;  
+    }  
+}
+
+@media screen and (max-width: 1100px) {
+
+    .instruction-container {
+        /* outline: 1px solid red; */
+        width: 60%;
     }
 
+    .ingredient-container {
+       margin-left: 30px;
+   }   
 }
 
 @media screen and (max-width: 1000px) {
+    .ingredient-container {
+       width: 40%;
+   }
+    
+    .instruction-container {
+        line-height: 2rem;
+        width: 70%;
+    }
+
+    .instruction-container p {
+        /* outline: 1px solid red; */
+        text-indent: 2rem;;
+        line-height: 2rem;
+    }
+
+    .ingredients-container-lists {
+        margin-bottom: 60px;
+        /* outline: 1px solid green;  */
+    }
+    
+    .directions{
+        flex-direction: column;
+        align-items: center;
+    } 
+
     .recipe-title-container h1 {
         font-size: 3.2rem;  
+    }
+
+    .original-recipe p {
+        font-size: 15px;
+    }
+
+    .original-recipe p a {
+        font-size: 15px;
     }
 }
 
@@ -419,6 +468,70 @@ figcaption{
         font-size: 2.5rem;  
         /* outline: 1px solid red; */
     }
+    .ingredient-container {
+        /* outline: 5px solid purple; */
+       /* display: flex; */
+       /* flex-direction: column; */
+       /* margin-left: 100px; */
+       /* width: 40%; */
+       /* align-items: center; */
+   }
+    
+    .instruction-container {
+        /* outline: 1px solid red; */
+        /* width: 70%; */
+        /* padding: 0 0 20px 0; */
+        /* margin: 0 auto 30px auto; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+    }
+
+    .ingredients-container-lists {
+        /* box-shadow: 3px 3px 5px rgba(0, 0, 0, .7);
+        outline: 1px solid black;
+        width: 100%;
+        /* margin-left: 45px; */
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* margin-bottom: 60px; */
+        /* padding: 10px; */
+        /* outline: 1px solid green; */ 
+    }
+    
+    .amount-list {
+        /* outline: 1px solid yellow;
+        font-size: 16px;
+        line-height: 1.4rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px; */
+    }
+    
+    .ingredients-list {
+        /* outline: 1px solid red; */
+        /* width: 50%;
+        font-size: 16px;
+        margin-left: 15px;
+        line-height: 1.4rem;
+        padding: 5px; */
+    }
+    
+    
+    .full-recipe-text {
+        /* outline: 2px solid green; */
+        /* width: 100%; */
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; */
+        /* margin-top: 50px; */
+        /* margin-bottom: 320px; */
+    }   
+
 }
 
 @media screen and (max-width: 600px) {
