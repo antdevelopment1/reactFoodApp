@@ -13,7 +13,8 @@ class Random extends React.Component{
             recipeImage: "",
             recipeTitle: "",
             likes: parseInt((Math.random() * (100)).toFixed(0)),
-            unlikes: parseInt((Math.random() * (-100)).toFixed(0)),
+            unlikes: parseInt((Math.random() * (100)).toFixed(0)),
+            unlike1: parseInt((Math.random() * (100)).toFixed(0)),
             ingredients: [],
             measurements: [],
             instructions: "",
@@ -93,10 +94,13 @@ class Random extends React.Component{
                     <div className="title-likes">   
                         <h1>{this.state.recipeTitle}</h1>
                         <Counters
+                            _DislikeMe1={this._handleUnlike1}
+                            unlikes1={this.state.unlike1}
                             _LikeMe={this._handleLike}
                             likes={this.state.likes}
                             _DislikeMe={this._handleUnlike}
                             unlikes={this.state.unlikes}
+                            
                         />
                     </div>
                 </div>
@@ -109,6 +113,11 @@ class Random extends React.Component{
                 />
             </div>
         )
+    }
+    _handleUnlike1 = () => {
+        this.setState({
+            likes: (this.state.likes + 100)
+        })
     }
 
     _handleLike = () => {

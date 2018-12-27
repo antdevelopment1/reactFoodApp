@@ -51,10 +51,10 @@ const Instructions = (props) => {
                 <div className="instruction-container">
                     <h3>Instructions:</h3>
                     <p className="instructions">{instruction}</p>
+                    <div className="original-recipe">
+                        <p className="website-link">Find the original recipe here: <a href={URL} target="blank">{URL}</a></p>
+                    </div>
                 </div>
-            </div>
-            <div className="original-recipe">
-                <p className="website-link">Find the original recipe here: <a href={URL} target="blank">{URL}</a></p>
             </div>
         </div >
     )
