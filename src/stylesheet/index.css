@@ -646,6 +646,13 @@ figcaption{
         padding: 15px 25px;
     }
 
+    .ingredient-container {
+        width: 90%;
+        /* outline: 1px solid red; */
+        /* margin-left: 0px; */
+    }
+
+
     .button1, .button2 {
         border: 1px solid black;
         padding: 5px;
