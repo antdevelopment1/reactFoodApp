@@ -572,6 +572,45 @@ figcaption{
 
 @media screen and (max-width: 550px) {
 
+
+    .recipe-header {
+        /* outline: 3px solid purple; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title-likes {
+        /* outline: 1px solid red; */
+       
+        /* padding: 10px 20px; */
+    }
+    
+    .title-likes h1 {
+        /* font-size: 36px; */
+        /* margin-bottom: 10px; */
+        /* outline: 1px solid red; */
+        text-align: center;
+    }
+    
+    .counter-btn-container {
+        /* outline: 1px solid purple; */
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; */
+    }
+    
+    .button1, .button2 {
+        border: 1px solid black;
+        /* padding: 10px; */
+        /* margin: 5px 20px; */
+        font-size: 20px;
+        /* outline: 1px solid red; */
+    }
+    
+    
+
 }
 
 @media screen and (max-width: 400px) {
