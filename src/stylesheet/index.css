@@ -496,81 +496,43 @@ figcaption{
 
     .full-recipe-text {
         margin-bottom: 0px;
-        /* outline: 1px solid red;
+        /* outline: 1px solid red; */
     } 
-    .ingredient-container {
-        /* outline: 5px solid purple; */
-       /* display: flex; */
-       /* flex-direction: column; */
-       /* margin-left: 100px; */
-       /* width: 70%; */
-       /* align-items: center; */
-   }
-    
-    .instruction-container {
-        /* outline: 1px solid red; */
-        /* width: 70%; */
-        /* padding: 0 0 20px 0; */
-        /* margin: 0 auto 30px auto; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: flex-start; */
-        /* align-items: center; */
+}
+@media screen and (max-width: 650px) {
+    .recipe-title-container h1 {
+        font-size: 2rem;
     }
 
-    .ingredients-container-lists {
-        /* box-shadow: 3px 3px 5px rgba(0, 0, 0, .7);
-        outline: 1px solid black;
-        width: 100%;
-        /* margin-left: 45px; */
-        /* display: flex; */
-        /* justify-content: space-evenly; */
-        /* margin-bottom: 60px; */
-        /* padding: 10px; */
-        /* outline: 1px solid green; */ 
+    .title-likes h1 {
+        font-size: 30px;
     }
-    
-    .amount-list {
-        /* outline: 1px solid yellow;
-        font-size: 16px;
-        line-height: 1.4rem;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5px; */
-    }
-    
-    .ingredients-list {
-        /* outline: 1px solid red; */
-        /* width: 50%;
-        font-size: 16px;
-        margin-left: 15px;
-        line-height: 1.4rem;
-        padding: 5px; */
-    }
-    
-    
-    .full-recipe-text {
-        /* outline: 2px solid green; */
-        /* width: 100%; */
-        /* display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; */
-        /* margin-top: 50px; */
-        /* margin-bottom: 320px; */
-    }   
 
-    
+    .button1, .button2 {
+        padding: 10px;
+        font-size: 18px;
+        /* outline: 1px solid red; */
+    }
+
 }
 
 @media screen and (max-width: 600px) {
 
-    .recipe-title-container h1 {
-        font-size: 2.2rem;  
+    .counter-btn-container {
+        /* outline: 1px solid purple; */
+    }
+    
+    .title-likes {
+        padding: 5px 10px;
         /* outline: 1px solid red; */
     }
+    
+    .button1, .button2 {
+        margin: 0 10px;
+        font-size: 18px;
+        /* outline: 1px solid red; */
+    }
+
      .country-title-container {
         padding: 0px;
     }
@@ -578,7 +540,7 @@ figcaption{
     .country-title-container h1 {
         font-size: 3.3rem;
         letter-spacing: 4px;
-        /* outline: 1px solid blue; */   
+        /* outline: 1px solid blue;   */
     }
     
     .country-title-container h2 {
@@ -605,7 +567,11 @@ figcaption{
     
     .back-btn {
         padding-left: 25px;
-    }
+    } 
+}
+
+@media screen and (max-width: 550px) {
+
 }
 
 @media screen and (max-width: 400px) {
