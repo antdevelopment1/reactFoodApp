@@ -45,4 +45,73 @@ This website is a food app that uses React and API calls, to render meal instruc
 
 ## Code Walkthrough / Featues
 
-### Built By April Copes, Steven Taesung Kim, Clare Barton, and Lauren Wilkerson
+
+### Landing Page, Recipe Page, and Ingredients Page Features
+<p>The landing page is a view of country flags for user to click.</p>
+<br>
+<br>
+
+<p>The images have a scale and box shadow transition on hover</p>
+
+```
+
+```
+
+<p>When the image is clicked we pass an object as props down to our flag country component</p>
+
+```
+
+```
+
+<p>Once the user picks a meal they are then routed using Link from React router with access to props from our parent compoment</p>
+
+```
+
+```
+
+### API Features
+<p>We do a fectch request and convert our response to JSON and drill into our object to set out state to a property on our retrieved object.</p>
+
+<p></p>
+
+```
+
+```
+
+<p></p>
+
+```
+
+```
+
+<p></p>
+
+```
+
+```
+
+### Counters / Randomized Feature
+<p></p>
+
+<p></p>
+
+```
+
+```
+
+<p></p>
+
+```
+    
+```
+
+### Challenges and What I Learned
+
+<p></p>
+
+```
+    
+```
+
+### Built By:
+#### April Copes, Steven Taesung Kim, Clare Barton, and Lauren Wilkerson
