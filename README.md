@@ -1,7 +1,7 @@
 # yumWorld React App
 
 ## What Is This Project About
-This website portfolio displays several projects I have built and contributed to most recently.
+This website is a food app that uses React and API calls, to render meal instructions to the user based on the selected country and meal.
 
 ## Technologies used
 * HTML
