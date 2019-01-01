@@ -579,6 +579,21 @@ figcaption{
         flex-direction: column;
     }
 
+    .recipe-title-container {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .recipe-title-container h1 {
+        font-size: 1.6rem;  
+        /* outline: 1px solid red; */
+    }
+
+    .recipe-title-container h2 {
+        font-size: 1.4rem;  
+        /* outline: 1px solid red; */
+    }
+
     .ingredient-container {
         width: 80%;
         margin-left: 0px;
@@ -625,7 +640,7 @@ figcaption{
     }
 
     .recipe-title-container h1 {
-        font-size: 1,4rem;  
+        font-size: 1.4rem;  
         /* outline: 1px solid red; */
     }
 
@@ -635,11 +650,14 @@ figcaption{
     }
 
     .country-title-container h1 {
-        font-size: 2.7rem;
+        /* outline: 1px solid red; */
+        font-size: 3rem;
     }
     
     .country-title-container h2 {
         font-size: 1.3rem;
+        /* outline: 1px solid red; */
+        margin-bottom: 75px;
     }
     
     .random-btn {
