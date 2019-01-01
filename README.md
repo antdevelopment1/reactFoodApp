@@ -1,4 +1,4 @@
-# April Copes | yumWorld React App
+# yumWorld React App
 
 ## What Is This Project About
 This website portfolio displays several projects I have built and contributed to most recently.
@@ -25,6 +25,7 @@ This website portfolio displays several projects I have built and contributed to
 <p align='center'>
     <img src='readme/images/britishmeals.png'></img>
 </p>
+<br>
 <p align='center'>
     <img src='readme/images/jamacian.png'></img>
 </p>
@@ -33,9 +34,11 @@ This website portfolio displays several projects I have built and contributed to
 <p align='center'>
     <img src='readme/images/chickenalfedo.png'></img>
 </p>
+<br>
 <p align='center'>
     <img src='readme/images/kungpow.png'></img>
 </p>
+<br>
 <p align='center'>
     <img src='readme/images/buttertarts.png'></img>
 </p>
