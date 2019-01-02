@@ -140,6 +140,7 @@ figcaption{
     box-shadow: 3px 3px 7px black;
     transition: box-shadow .2s ease-in-out .1s, color .2s ease-in-out .1s, transform .2s ease-in-out .1s;
     margin-bottom: 8px;
+    /* outline: 1px solid red; */
 }
 
 .flagImages:hover {

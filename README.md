@@ -54,19 +54,92 @@ This website is a food app that uses React and API calls, to render meal instruc
 <p>The images have a scale and box shadow transition on hover</p>
 
 ```
+.flagImages {
+    min-height: 150px;
+    min-width: 200px;
+    max-height: 150px;
+    max-width: 200px;
+    box-shadow: 3px 3px 7px black;
+    transition: box-shadow .2s ease-in-out .1s, color .2s ease-in-out .1s, transform .2s ease-in-out .1s;
+    margin-bottom: 8px;
+    outline: 1px solid red;
+}
 
+.flagImages:hover {
+    transform: scale(1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .7)
+}
 ```
 
 <p>When the image is clicked we pass an object as props down to our flag country component</p>
 
 ```
+<Route path="/:country" exact render={(props) => {
+    return (
+        <ListOfRecipes
+            nationality={this.state.countries}
+            {...props}
+        />)
+}} />
+```
+
+```
+const FlagCountry = (props) => {
+    const arrayOfList = props.countryFlags
+    const theListOfCountry = arrayOfList.map((country, index) => {
+        const theCountry = country.country;
+        const theFlag = country.flag;
+        const theNationality = country.nationality;
+        const theKey = index;
+
+        return (
+            <Link to={`/${theNationality}`} key={theKey} >
+                <div className="images">
+                    <figure>
+                        <img className="flagImages" alt={theCountry} src={theFlag}/>
+                        <figcaption>
+                            {theCountry}
+                        </figcaption>
+                    </figure>
+                </div>
+            </Link>
+        )
+    });
+```
+
+
+<p>Once the user picks a meal they are then routed to the single meal with ingrediants and meal prep instructions</p>
+
+```
+ <Route path="/:country/:dish/:id" exact render={(props) => {
+    return (
+        <RecipePage
+            recipes={this.state.recipe}
+            {...props}
+        />)
+}} />
 
 ```
 
-<p>Once the user picks a meal they are then routed using Link from React router with access to props from our parent compoment</p>
-
 ```
+const countryName = this.props.match.params.country;
+const listOfRecipes = this.state.recipes.map((recipe, index) => {
+    const id = recipe.idMeal;
+    
+    return( 
+            <Link key={index} to = {`/${countryName}/${recipe.strMeal}/${id}`}>
+            <div className="images">
+                <figure>
+                    <img className="food-images" src={recipe.strMealThumb} alt={recipe.strMealThumb}/>
+                        <figcaption>
+                            {recipe.strMeal} 
+                        </figcaption>
+                </figure>
+                </div>
+            </Link>
 
+    )
+})
 ```
 
 ### API Features
@@ -75,42 +148,62 @@ This website is a food app that uses React and API calls, to render meal instruc
 <p></p>
 
 ```
-
-```
-
-<p></p>
-
-```
-
-```
-
-<p></p>
-
-```
-
+componentDidMount() {
+    const countryName = this.props.match.params.country;
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryName}`)
+        .then(r => r.json())
+        .then(recipe => {
+            this.setState({
+                recipes: recipe.meals
+        });
+    })
+}
 ```
 
 ### Counters / Randomized Feature
-<p></p>
+<p>This feature uses second API call and lets you select a random dish where you can vote up or down based on your liking.</p>
 
-<p></p>
+```
+ <Route path="/random/dish" exact render={(props) => {
+    return (
+        <Random
+            recipes={this.state.recipe}
+            nationality={this.state.countries}
+            {...props}    
+        />)
+}} /> 
+```
 
+<p>Functions to handle increase and decrease in count</p>
+
+```
+ constructor(props) {
+    super(props);
+    this.state = {
+        id: "",
+        recipeImage: "",
+        recipeTitle: "",
+        likes: parseInt((Math.random() * (100)).toFixed(0)),
+        unlikes: parseInt((Math.random() * (100)).toFixed(0)),
+        ingredients: [],
+        measurements: [],
+        instructions: "",
+        sourceURL: ""
+}
 ```
 
 ```
+_handleLike = () => {
+    this.setState({
+        likes: (this.state.likes + 1)
+    })
+};
 
-<p></p>
-
-```
-    
-```
-
-### Challenges and What I Learned
-
-<p></p>
-
-```
-    
+_handleUnlike = () => {
+    this.setState({
+        unlikes: (this.state.unlikes - 1)
+    })
+};
 ```
 
 ### Built By:
